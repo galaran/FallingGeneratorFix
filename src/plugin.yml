@@ -1,0 +1,4 @@
+name: FallingGeneratorFix
+main: mccity.plugins.fallinggeneratorfix.FallingGeneratorFix
+version: 1.0
+author: Galaran
