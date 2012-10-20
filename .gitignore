@@ -5,3 +5,5 @@ out/
 *.jar
 
 lib/
+dist/
+bin/
