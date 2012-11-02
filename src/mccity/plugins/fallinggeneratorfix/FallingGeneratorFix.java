@@ -36,6 +36,7 @@ public class FallingGeneratorFix extends JavaPlugin implements Listener {
                 return;
             } else if (curMat == Material.DRAGON_EGG) {
             	event.setCancelled(true);
+            	break;
             }
         }
     }
