@@ -34,6 +34,8 @@ public class FallingGeneratorFix extends JavaPlugin implements Listener {
             if (curMat == Material.SAND || curMat == Material.GRAVEL) {
                 markedPistons.put(piston, piston.getWorld().getFullTime());
                 return;
+            } else if (curMat == Material.DRAGON_EGG) {
+            	event.setCancelled(true);
             }
         }
     }
