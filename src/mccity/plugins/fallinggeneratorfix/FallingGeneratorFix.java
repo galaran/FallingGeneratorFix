@@ -50,7 +50,7 @@ public class FallingGeneratorFix extends JavaPlugin implements Listener {
         Block piston = event.getBlock();
         Long markTick = markedPistons.get(piston);
         if (markTick != null) {
-            if (piston.getWorld().getFullTime() > markTick) {
+            if (piston.getWorld().getFullTime() > markTick + 2) {
                 markedPistons.remove(piston);
             } else {
                 event.setCancelled(true);
